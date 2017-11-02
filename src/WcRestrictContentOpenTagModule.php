@@ -50,7 +50,6 @@ class WcRestrictContentOpenTagModule extends ET_Builder_Module
                     'toggle_slug' => 'shortcode',
                     'description' => esc_html__('Select the WooCommerce Membership Restriction Shortcode', 'et_builder'),
                     'affects' => array(
-                        'plans',
                         'delay',
                         'start_after_trial',
                     ),
@@ -64,7 +63,6 @@ class WcRestrictContentOpenTagModule extends ET_Builder_Module
                     'toggle_slug' => 'shortcode',
                     'description' => esc_html__('Enter the plan slugs or IDs to limit the wrapped content to certain members', 'et_builder'),
                     'affects' => array(),
-                    'depends_show_if' => 'wcm_restrict',
                     'default' => $this->getDefault('plans'),
                 );
 
@@ -185,6 +183,12 @@ class WcRestrictContentOpenTagModule extends ET_Builder_Module
                 
                 if ($atts['start_after_trial']) {
                     $atts['start_after_trial'] = ($atts['start_after_trial'] == 'on') ? 'yes' : 'no';
+                }
+                break;
+
+            case 'wcm_nonmember':
+                if ($atts['plans']) {
+                    $attributes['plans'] = $atts['plans'];
                 }
                 break;
             
