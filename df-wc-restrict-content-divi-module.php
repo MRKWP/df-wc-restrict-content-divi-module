@@ -7,18 +7,18 @@
  * Author URI:      https://www.diviframework.com
  * Text Domain:     df-wc-restrict-content-divi-module
  * Domain Path:     /languages
- * Version:         1.0.1
+ * Version:         1.1.0
  *
  * @package
  */
 
-if (! defined('ABSPATH')) {
-    exit; // Exit if accessed directly
+if (!defined('ABSPATH')) {
+	exit; // Exit if accessed directly
 }
 
-define('DF_RESTRICT_CONTENT_VERSION', '1.0.1');
+define('DF_RESTRICT_CONTENT_VERSION', '1.1.0');
 define('DF_RESTRICT_CONTENT_DIR', __DIR__);
-define('DF_RESTRICT_CONTENT_URL', plugins_url('/'.basename(__DIR__)));
+define('DF_RESTRICT_CONTENT_URL', plugins_url('/' . basename(__DIR__)));
 
 require_once DF_RESTRICT_CONTENT_DIR . '/vendor/autoload.php';
 
@@ -29,9 +29,6 @@ $container['plugin_file'] = __FILE__;
 $container['plugin_dir'] = DF_RESTRICT_CONTENT_DIR;
 $container['plugin_url'] = DF_RESTRICT_CONTENT_URL;
 $container['plugin_slug'] = 'df-wc-restrict-content-divi-module';
-
-//register API license checks.
-$container->registerLicense();
 
 // activation hook.
 register_activation_hook(__FILE__, array($container['activation'], 'install'));
