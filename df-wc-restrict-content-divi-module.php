@@ -7,16 +7,16 @@
  * Author URI:      https://www.diviframework.com
  * Text Domain:     df-wc-restrict-content-divi-module
  * Domain Path:     /languages
- * Version:         1.1.1
+ * Version:         1.1.2
  *
  * @package
  */
 
 if (!defined('ABSPATH')) {
-	exit; // Exit if accessed directly
+    exit; // Exit if accessed directly
 }
 
-define('DF_RESTRICT_CONTENT_VERSION', '1.1.1');
+define('DF_RESTRICT_CONTENT_VERSION', '1.1.2');
 define('DF_RESTRICT_CONTENT_DIR', __DIR__);
 define('DF_RESTRICT_CONTENT_URL', plugins_url('/' . basename(__DIR__)));
 
