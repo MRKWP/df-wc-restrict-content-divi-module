@@ -7,6 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
-    'DiviFramework\\UpdateChecker\\' => array($vendorDir . '/diviframework/update-checker/src'),
     'DF\\DF_RESTRICT_CONTENT\\' => array($baseDir . '/src'),
 );
