@@ -10,7 +10,7 @@ This is a great way to restrict content and show what you need to the right memb
 
 It’s invaluable to get fantastic content showing to your paying members.
 
-> Note: Headsup! We have moved on other things & in spirit of GPL2 & WordPress ecosystem we have released the source code. We won't be developing or support this plugin. 
+> Note: Headsup! We have moved on to other things & in spirit of GPL2 & WordPress ecosystem we have released the source code. We won't be developing or support this plugin. 
 
 ## The Shortcode Functionality
 
