@@ -1,4 +1,4 @@
-# Woo Member Restrict Module - [www.diviframework.com](https://www.diviframework.com/)
+# Woo Member Restrict Module - [www.mrkwp.com](https://www.mrkwp.com/)
 
 If you use memberships with WooCommerce and Divi, you may have some trouble doing page layouts.
 
