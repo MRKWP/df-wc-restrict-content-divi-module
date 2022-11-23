@@ -123,7 +123,7 @@ class WcRestrictContentOpenTagModule extends ET_Builder_Module
         $this->field_defaults = $defaults;
 
 
-        $this->options_toggles = array(
+        $this->settings_modal_toggles = array(
             'general' => array(
                     'settings' => array(
                         'toggles_disabled' => true,
